@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
 </template>
@@ -12,12 +11,38 @@ export default {
 </script>
 
 <style>
+a {
+  cursor: pointer;
+}
+input {
+  background-color: #EEE !important;
+  padding-left: 7px !important;
+}
+input[disabled] {
+    color: #AAA;
+    cursor: not-allowed;
+}
+.mu-text-field-label.float {
+  color: #777 !important;
+  padding-left: 7px;
+}
+.mu-dialog {
+  max-width: 620px;
+}
+.mu-content-block {
+    padding: 16px;
+}
+.id {
+  width: 75px;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-width: 800px;
+}
+.mu-td {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body {
+  font-family: Roboto,Lato,sans-serif;
 }
 </style>
